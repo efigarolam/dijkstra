@@ -1,0 +1,3 @@
+class DijkstraSolver
+
+end
