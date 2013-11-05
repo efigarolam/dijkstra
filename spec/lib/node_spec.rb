@@ -31,4 +31,16 @@ describe Node do
 
     its(:current) { should == false }
   end
+
+  describe '#reset' do
+    before do
+      subject.mark_as_current
+      subject.reset
+    end
+
+    its(:name) { should == "Node 1" }
+    its(:current) { should == false }
+    its(:visited) { should == false }
+    its(:tentative_distance) { should == Float::INFINITY }
+  end
 end

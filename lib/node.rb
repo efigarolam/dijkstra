@@ -28,4 +28,10 @@ class Node
   def set_not_current
     @current = false
   end
+
+  def reset
+    @current = false
+    @visited = false
+    @tentative_distance = Float::INFINITY
+  end
 end

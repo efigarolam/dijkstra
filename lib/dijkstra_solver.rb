@@ -30,6 +30,10 @@ class DijkstraSolver
     end
   end
 
+  def reset_nodes_status
+    graph.nodes.map(&:reset)
+  end
+
   private
 
   def prepare_start_node
@@ -63,6 +67,4 @@ class DijkstraSolver
 
     new_current_node.mark_as_current
   end
-
-
 end
