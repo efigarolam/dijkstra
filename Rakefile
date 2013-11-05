@@ -1,3 +1,7 @@
 task :dijkstra do
-  `ruby dijkstra.rb >&2`
+  `ruby example.rb >&2`
+end
+
+task :run_tests do
+  `rspec >&2`
 end
